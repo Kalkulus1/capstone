@@ -63,7 +63,7 @@ def send_data_to_server():
     print("Sensing...")
     print ("Measured Distance = %.1f cm" % dist)
     #print ("Measured Flow  = %.1f cm" % flowr)
-    level_consumed = str(dist)
+    level = str(dist)
     urllib2.urlopen("http://teknoprojects.tech/add_data.php?fuel_level="+level).read()
 
 
